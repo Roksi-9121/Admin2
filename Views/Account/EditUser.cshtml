@@ -1,0 +1,20 @@
+﻿@model DTO.User
+
+<h2>Edit User</h2>
+
+<form asp-action="EditUser" method="post">
+    <input type="hidden" asp-for="User_id" />
+    <div>
+        <label for="User_name">Name</label>
+        <input asp-for="User_name" />
+    </div>
+    <div>
+        <label for="Email">Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label for="Is_active">Active</label>
+        <input asp-for="Is_active" type="checkbox" />
+    </div>
+    <button type="submit">Save</button>
+</form>

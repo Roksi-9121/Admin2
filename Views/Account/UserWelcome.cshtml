@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<form asp-action="Logout" method="post" style="text-align: right;">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+
+<h1>Welcome, user!</h1>
+<p>Your email: @ViewBag.UserEmail</p>
